@@ -39,8 +39,9 @@ a {
 .info-section {
   background: linear-gradient(135deg, var(--accent), var(--accent-dark));
   padding: 4rem;
-  display: flex;
-  align-items: center;
+  display: grid;
+  place-items: center;
+
   position: relative;
   overflow: hidden;
 }
@@ -216,6 +217,11 @@ a {
   outline: none;
   border-color: var(--accent);
   box-shadow: 0 0 0 3px var(--accent-light);
+}
+
+.form-group select option {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #0a0a0a;
 }
 
 .form-group select {
